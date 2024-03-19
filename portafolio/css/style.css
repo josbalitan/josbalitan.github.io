@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../img/bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family:'Open Sans',Sans-serif, Arial, Helvetica;
+}
+
+.logo {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.logo h2 {
+	display: display;
+	text-align: centar;
+	left: 600px;
+	width: 200px;
+	background-color: #fffdfd;
+	border:  2px solid #070707;
+}
+
+a {	text-decoration: none; }
+
+.contenedor {
+	width: 90%;
+	max-width: 1090px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+
+.tarjeta {
+	margin:40px 0;
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+/* --------------------------------------- */
+/* ----- Slider Banner */
+/* --------------------------------------- */
+
+.section-header {
+    display: block;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+}
+
+section {
+    padding-top: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+a, a:link, a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+
+.Carousel-slider {
+    height: 250px;
+    position: relative;
+    width: 100%;
+}
+
+.Carousel-slider.fullwidth {
+    height: 150px;
+}
+
+.Carousel-slider.fullwidth .slider-item {
+    height: 150px;
+    line-height: 150px;
+    width: 100%
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+	perspective: 300px  !important;
+}
+
+.slider-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+    display: none;
+    height: 250px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 600px;
+    cursor: pointer;
+	border: 5px solid #8a8a8a;
+}
+
+.indicators {
+	top: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 0 0 0 -77px;
+    position: absolute;
+}
+
+.indicators li {
+    color: #0aff17;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    width: 16px;
+}
+
+.indicators li:last-child {margin: 0;}
+.indicators a {
+    background: #f8440d;
+    border-radius: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.indicators .active a {
+	background: #e4e5e6;
+
+}
+.superHero1 {background-image: url(../img/page.PNG); border-radius: 10px !important;background-size:cover;}
+.superHero2 {background: url(../img/page1.PNG); border-radius: 10px !important;background-size: cover;}
+.superHero3 {background: url(../img/page2.PNG); border-radius: 10px !important;background-size: cover;}
+.superHero4 {background: url(../img/page3.PNG); border-radius: 10px !important;background-size:cover;}
+.superHero5 {background: url(../img/page4.png); border-radius: 10px !important;background-size: cover;}
+
+@media screen and (min-width: 768px) {
+    .slider_info {
+        width: 70%; /* Ajustar según sea necesario */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slider_info {
+        width: 50%; /* Ajustar según sea necesario */
+    }
+}
+
+.slider_banner {
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider_banner .banner {
+	position: relative;
+	display: flex;
+	width: 100%; 
+}
+
+.slider_banner .banner .img {
+	width: 50%;
+}
+
+.slider_banner .banner .img img {
+	vertical-align: top;
+	width: 50%;
+	position: absolute;
+	left: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider_banner .flecha-banner {
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(0, 0, 0, 0.418);
+	position: absolute;
+	top:50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha-banner:hover {
+	color: rgba(0,0,0,.5);
+}
+
+.slider_banner .flecha-banner.anterior {left: 200px;}
+.slider_banner .flecha-banner.siguiente {right: 200px;}
+
+/* --------------------------------------- */
+/* ----- Slider Info */
+/* --------------------------------------- */
+
+.slider_info {
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 50%; /* Ajustar según sea necesario */
+    max-width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+}
+/* Seccion Informacion */
+
+.slider_info .informacion {
+	width: 100%;
+}
+
+.slider_info .informacion article {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	padding: 20px 80px;
+	position: absolute;
+}
+
+.slider_info .informacion article .slide img {
+	width: 80px;
+}
+.slider_banner .header {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+
+/* Slider Flechas */
+
+.slider_info .flecha-info {
+	font-size: 35px;
+	line-height: 35px;
+	color: #e6e6e6;
+	position: absolute;
+	top:50%;
+	z-index: 1000;
+}
+
+.slider_info .flecha-info:hover {
+	color:#6ed279;
+}
+
+.slider_info .flecha-info.anterior {
+	left: 20px;
+}
+
+.slider_info .flecha-info.siguiente {
+	right: 20px;
+}
+
+
+/* Estilos para los Slide de Info */
+
+.slider_info .informacion .nombre {
+	color: #444444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight:600;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .trabajo {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .pais {
+	color: #8d8d8d;
+	font-family: 14px;
+	line-height: 14px;
+}
+
+.slider_info .informacion .pais img {
+	position: relative;
+	top:2px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .texto {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.slider_info .informacion .subtitulo {
+	color: #444444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+/* Botones Slider Info */
+
+.slider_info .informacion .botones {
+	width: 100%;
+}
+
+.slider_info .informacion .botones span {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background:#e6e6e6;
+}
+
+.slider_info .informacion .botones .active {
+	background: #6ed279;
+}
+
+/* ----- ----- Redes Sociales ----- ----- */
+.redes-sociales {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.redes-sociales a {
+	display: inline-block;
+	font-style:20px;
+	width: 50px;
+	height: 50px;
+	font-line:20px;
+	padding: 14px 0;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 5px;
+	border: 1px solid #070707;
+}
+
+.redes-sociales .link { background: #f6f7f8; color:#255f8b;}
+.redes-sociales .twitter { background: #070707; }
