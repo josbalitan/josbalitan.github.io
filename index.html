@@ -8,6 +8,32 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<title>PortFolio</title>
+	<style>
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill h2 {
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #007bff;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+        }
+    </style>
 </head>
 <body>
 	<div class="logo"><h2>ºPortFolio</h2></div>
@@ -56,6 +82,19 @@ er
 							<p class="texto">Labore para Empresa de SOFTWARE llamada SACISOFT, Contribui en el diseño del interfas de logo, Dahsword, y implementacion y diseño de modulos de facturacion, inventario, caja</p>
 						</div>
 					</article>
+					<aside class="skill">
+						<h2>Skills</h2>
+						<div class="progress-bar">
+							<div id="cSharpProgress" class="progress-bar-fill"></div>
+						</div>
+						<div class="progress-bar">
+							<div id="pythonProgress" class="progress-bar-fill"></div>
+						</div>
+						<div class="progress-bar">
+							<div id="javascriptProgress" class="progress-bar-fill"></div>
+						</div>
+
+					</aside>
 					<div class="botones" id="botones"></div>
 				</section>
 
@@ -74,5 +113,26 @@ er
 <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+        // Set skill levels
+        var cSharpSkill = 0; // C# range: 0 to 60
+        var pythonSkill = 0; // Python range: 0 to 100
+        var javascriptSkill = 0; // JavaScript range: 0 to 100
+
+        // Function to update progress bars
+        function updateProgress() {
+            document.getElementById("cSharpProgress").style.width = (cSharpSkill / 60 * 100) + "%";
+            document.getElementById("cSharpProgress").textContent = "C# " + cSharpSkill;
+
+            document.getElementById("pythonProgress").style.width = (pythonSkill / 100 * 100) + "%";
+            document.getElementById("pythonProgress").textContent = "Python " + pythonSkill;
+
+            document.getElementById("javascriptProgress").style.width = (javascriptSkill / 100 * 100) + "%";
+            document.getElementById("javascriptProgress").textContent = "JavaScript " + javascriptSkill;
+        }
+
+        // Initial update
+        updateProgress();
+    </script>
 </body>
 </html>
