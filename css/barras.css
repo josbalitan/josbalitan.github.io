@@ -11,7 +11,7 @@
 } 
 
 .skills h2 {
-    font-size: 48px;
+    font-size:38px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
@@ -26,11 +26,6 @@
     padding: 0 5px;
 }
 
-.skills .fila .col h3 {
-    font-size:28px;
-    font-family: 'Righteous';
-    margin-bottom: 5px;
-}
 
 .skills .skill > span {
     font-weight: bold;
