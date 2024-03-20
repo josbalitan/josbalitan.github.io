@@ -7,7 +7,7 @@
 }
 
 body {
-	background: url('../img/bg.png');
+	background: url('../img/bg1.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	font-family:'Open Sans',Sans-serif, Arial, Helvetica;
@@ -204,11 +204,13 @@ a, a:link, a:visited {
 .slider_info {
     text-align: center;
     position: relative;
+	display: flex;
+	justify-content: space-between;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
-    width: 50%; /* Ajustar según sea necesario */
+    width: 100%; /* Ajustar según sea necesario */
     max-width: 100%;
     padding: 20px 0;
     z-index: 1000;
@@ -216,7 +218,7 @@ a, a:link, a:visited {
 /* Seccion Informacion */
 
 .slider_info .informacion {
-	width: 100%;
+	width: 70%;
 }
 
 .slider_info .informacion article {
@@ -331,6 +333,7 @@ a, a:link, a:visited {
 
 /* ----- ----- Redes Sociales ----- ----- */
 .redes-sociales {
+	background-color: #255f8b;
 	text-align: center;
 	padding: 5px 0;
 }

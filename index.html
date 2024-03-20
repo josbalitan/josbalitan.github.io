@@ -4,36 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, 
 	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/barras.css">
 	<title>PortFolio</title>
-	<style>
-        .skill {
-            margin-bottom: 20px;
-        }
 
-        .skill h2 {
-            margin-bottom: 5px;
-        }
-
-        .progress-bar {
-            width: 300px;
-            height: 20px;
-            background-color: #f0f0f0;
-            border-radius: 10px;
-            margin-bottom: 5px;
-        }
-
-        .progress-bar-fill {
-            height: 100%;
-            border-radius: 10px;
-            background-color: #007bff;
-            text-align: center;
-            color: white;
-            line-height: 20px;
-        }
-    </style>
 </head>
 <body>
 	<div class="logo"><h2>ºPortFolio</h2></div>
@@ -76,33 +53,69 @@
 							<h2 class="subtitulo">Perfil</h2>
 							<p class="texto">Soy programador junior, con conocimientos en creacion de aplicaciones web, Desktop, front-end, back-end, consumo de API, AJAX,JQUERY, BootStrap, Shell-script, T-Sql</p>
 						</div>
-er
+
 						<div class="slide">
 							<h2 class="subtitulo">Mis Experiencias</h2>
 							<p class="texto">Labore para Empresa de SOFTWARE llamada SACISOFT, Contribui en el diseño del interfas de logo, Dahsword, y implementacion y diseño de modulos de facturacion, inventario, caja</p>
 						</div>
 					</article>
-					<aside class="skill">
-						<h2>Skills</h2>
-						<div class="progress-bar">
-							<div id="cSharpProgress" class="progress-bar-fill"></div>
-						</div>
-						<div class="progress-bar">
-							<div id="pythonProgress" class="progress-bar-fill"></div>
-						</div>
-						<div class="progress-bar">
-							<div id="javascriptProgress" class="progress-bar-fill"></div>
-						</div>
-
-					</aside>
+					
 					<div class="botones" id="botones"></div>
 				</section>
-
+				<aside class="skills" id="skills">
+					<div class="contenido-seccion">
+						<h2>Skills</h2>	
+						<div class="fila">
+							<div class="col">
+								<h3>Programacion</h3>
+								<div class="skill">
+									<span>JAVASCRIPT</span>
+									<div class="barra-skill">
+										<div class="progreso">
+											<span>75</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill">
+									<span>HTML & CSS</span>
+									<div class="barra-skill">
+										<div class="progreso">
+											<span>75</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill">
+									<span>T-SQL</span>
+									<div class="barra-skill">
+										<div class="progreso">
+											<span>75</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill">
+									<span>ASP.Net</span>
+									<div class="barra-skill">
+										<div class="progreso">
+											<span>75</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill">
+									<span>AJAX</span>
+									<div class="barra-skill">
+										<div class="progreso">
+											<span>75</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
 			</section>
 			<section class="redes-sociales">
-				<a href="linkedin.com/in/jose-balitan-b762bb2b8" target="_blank" class="link"><span class="fa fa-linkedin"></span></a>
+				<a href="https://linkedin.com/in/jose-balitan-b762bb2b8" target="_blank" class="link"><span class="fa fa-linkedin"></span></a>
 				<a href="https://github.com/josbalitan/josbalitan.github.io" target="_blank" class="twitter"><span class="fa fa-github"></span></a>
-
 			</section>
 		
 				
@@ -113,26 +126,7 @@ er
 <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-        // Set skill levels
-        var cSharpSkill = 0; // C# range: 0 to 60
-        var pythonSkill = 0; // Python range: 0 to 100
-        var javascriptSkill = 0; // JavaScript range: 0 to 100
-
-        // Function to update progress bars
-        function updateProgress() {
-            document.getElementById("cSharpProgress").style.width = (cSharpSkill / 60 * 100) + "%";
-            document.getElementById("cSharpProgress").textContent = "C# " + cSharpSkill;
-
-            document.getElementById("pythonProgress").style.width = (pythonSkill / 100 * 100) + "%";
-            document.getElementById("pythonProgress").textContent = "Python " + pythonSkill;
-
-            document.getElementById("javascriptProgress").style.width = (javascriptSkill / 100 * 100) + "%";
-            document.getElementById("javascriptProgress").textContent = "JavaScript " + javascriptSkill;
-        }
-
-        // Initial update
-        updateProgress();
-    </script>
+	<script src="js/barras.js"></script>
+	
 </body>
 </html>

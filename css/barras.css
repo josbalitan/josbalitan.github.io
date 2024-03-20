@@ -1,0 +1,113 @@
+.skills {
+    width: 30%;
+    background-color: #252a2e;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+} 
+
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.skills .fila .col h3 {
+    font-size:28px;
+    font-family: 'Righteous';
+    margin-bottom: 5px;
+}
+
+.skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skills .skill .barra-skill {
+    height: 3px;
+    width: 100%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5px;
+} 
+
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .asp{
+    width: 0%;
+    animation: 2s asp forwards;
+}
+@keyframes asp {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .ajax{
+    width: 0%;
+    animation: 2s ajax forwards;
+}
+@keyframes ajax {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+
